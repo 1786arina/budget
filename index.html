@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<title>Бюджет</title>
+</head>
+
+<body>
+
+	<div class="top">
+		<div class="budget">
+
+			<div class="budget_title">
+				Бюджет на период <span class="budget_title--month">%Month%</span>:
+			</div>
+
+			<div class="budget_value"> <!-- Итоговое значение --> </div>
+
+			<div class="budget_income clearfix">
+
+				<div class="budget_income--text">Доходы</div>
+
+				<div class="right">
+					<div class="budget_income--value"> <!-- Положительное значение доходов --> </div>
+				</div>
+
+			</div>
+
+			<div class="budget_expenses clearfix">
+
+				<div class="budget_expenses--text">Расходы</div>
+
+				<div class="right clearfix">
+
+					<div class="budget_expenses--value"> <!-- Отрицательное значение расходов --> </div>
+
+					<div class="budget_expenses--percentage"> <!-- Процентная доля расходов  от доходов --> </div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="bottom">
+
+		<div class="add">
+			<div class="add_container">
+
+				<select class="add_type">
+
+					<option value="inc" selected>Доход</option>
+
+					<option value="exp">Расход</option>
+
+				</select>
+
+				<input type="text" class="add_description" placeholder="Описание">
+
+				<input type="number" class="add_value" placeholder="Значение">
+
+				<button class="add_btn"><i class="ion-ios-checkmark-outline"></i></button>
+
+			</div>
+		</div>
+
+		<div class="container clearfix">
+
+			<div class="income">
+
+				<h2 class="icome_title">Список доходов:</h2>
+
+				<div class="income_list">
+					<!-- Все доходы тут -->
+				</div>
+
+			</div>
+
+			<div class="expenses">
+
+				<h2 class="expenses_title">Список расходов:</h2>
+
+				<div class="expenses_list">
+                    <!-- Все расходы тут -->
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
